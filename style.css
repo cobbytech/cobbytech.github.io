@@ -384,23 +384,21 @@ section .title::after{
 .teams .carousel .card{
     background: #222;
     border-radius: 6px;
-    padding: 25px 35px;
+    padding-top: 25px;
     text-align: center;
     overflow: hidden;
-    transition: all 0.3s ease;
+   
 }
-.teams .carousel .card:hover{
-    background: crimson;
+
 }
 .teams .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
+  
 }
-.teams .carousel .card:hover .box{
-    transform: scale(1.05);
+
 }
 .teams .carousel .card .text{
     font-size: 25px;
@@ -408,15 +406,14 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 .teams .carousel .card img{
-    height: 700px;
-    width: 700px;
+    height: 900px;
+    width: 900px;
     background-position: cover;
     border-radius: 5%;
     border: 1px solid #ccc;
-    transition: all 0.3s ease;
+  
 }
-.teams .carousel .card:hover img{
-    border-color: #fff;
+
 }
 .owl-dots{
     text-align: center;
