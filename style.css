@@ -410,6 +410,7 @@ section .title::after{
     background-position: cover;
     border-radius: 5%;
     border: 1px solid #ccc;
+    margin: 50px 0;
   
 }
 
@@ -679,5 +680,15 @@ footer span a:hover{
   
 }
 .fab fa-whatsapp {
-  color: green;
+  background: green;
+}
+.buy {
+  border:1px solid yellow;
+  height:40px;
+  width: 70px;
+  text-align: center;
+  background: yellow;
+  margin: 0 auto;
+  color: black;
+  
 }
