@@ -675,4 +675,9 @@ footer span a:hover{
 }
 .social {
   font-size: 29px;
+  padding: 10px;
+  
+}
+.fab fa-whatsapp {
+  color: green;
 }
