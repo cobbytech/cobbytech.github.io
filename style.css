@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: Tahoma;
 }
 html{
     scroll-behavior: smooth;
@@ -54,7 +55,7 @@ section .title{
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: sans-serif;
 }
 section .title::before{
     content: "";
@@ -83,7 +84,7 @@ section .title::after{
     width: 100%;
     z-index: 999;
     padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'poppins', sans-serif;
     transition: all 0.3s ease;
     background: crimson;
     border-bottom-left-radius: 20px;
@@ -379,7 +380,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "who with me";
+    content: "what we have";
 }
 .teams .carousel .card{
     background: #222;
@@ -404,7 +405,7 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 .teams .carousel .card img{
-    height: 400px;
+    height: 500px;
     width: 100%;
     background-position: cover;
     border-radius: 5%;
@@ -529,9 +530,9 @@ section .title::after{
 
 /* footer section styling */
 footer{
-    background: #111;
-    padding: 15px 23px;
-    color: #fff;
+    background: #00e6ff55;
+    padding: 90px 23px;
+    color: #d3ddde;
     text-align: center;
 }
 footer span a{
@@ -671,4 +672,7 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+.social {
+  font-size: 29px;
 }
