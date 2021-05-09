@@ -42,18 +42,16 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["KIDS", "COUPLES", "MEN", "WOMEN", "ADULTS"],
-        typeSpeed: 100,
-        backSpeed: 60,
+        strings: ["KIDS ", "COUPLES", "MEN", "WOMEN", "and ADULTS"],
+        typeSpeed: 200,
+        backSpeed: 80,
         loop: true
     });
 
     // owl carousel script
-    $('.carousel').owlCarousel({
+$('.carousel').owlCarousel({
         margin: 20,
-        loop: true,
-        autoplayTimeOut: 2000,
-        autoplayHoverPause: true,
+        
         responsive: {
             0:{
                 items: 1,

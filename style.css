@@ -87,8 +87,7 @@ section .title::after{
     font-family: 'poppins', sans-serif;
     transition: all 0.3s ease;
     background: crimson;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    
 }
 .navbar.sticky{
     padding: 15px 0;
@@ -99,17 +98,10 @@ section .title::after{
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-}
-.navbar .logo a span{
-    color: #0ff3fb;
-    transition: all 0.3s ease;
-}
-.navbar.sticky .logo a span{
-    color: #fff;
+
+.me {
+  height:90%;
+  width: 60px;
 }
 .navbar .menu li{
     list-style: none;
@@ -383,7 +375,7 @@ section .title::after{
     content: "what we have";
 }
 .teams .carousel .card{
-    background: #222;
+    
     border-radius: 6px;
     padding-top: 30px;
     text-align: center;
@@ -405,10 +397,10 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 .teams .carousel .card img{
-    height: 500px;
+    height: 400px;
     width: 100%;
     background-position: cover;
-    border-radius: 5%;
+    border-radius: 2%;
     border: 1px solid #ccc;
     margin: 50px 0;
   
@@ -531,7 +523,7 @@ section .title::after{
 
 /* footer section styling */
 footer{
-    background: #00e6ff55;
+    background: #14161b;
     padding: 90px 23px;
     color: #d3ddde;
     text-align: center;
@@ -679,16 +671,25 @@ footer span a:hover{
   padding: 10px;
   
 }
-.fab fa-whatsapp {
+.fa-whatsapp {
+  color: white;
   background: green;
+  border-radius: 50%;
 }
-.buy {
-  border:1px solid yellow;
-  height:40px;
-  width: 70px;
-  text-align: center;
-  background: yellow;
-  margin: 0 auto;
-  color: black;
+.fa-youtube {
+  color: red;
   
 }
+.fa-facebook {
+  color: white;
+  background: blue;
+  border-radius: 50%;
+}
+.guru {
+  color: #878e90;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+  
+  
