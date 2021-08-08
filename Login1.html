@@ -1,9 +1,10 @@
+  <link rel="stylesheet" href="https://cdnjs.cloudflare. com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 <!DOCTYPE HTML>
 <html lang="en">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-compatible" content="ie=edge">
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare. com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <head>
     <title>
     Chat app
@@ -41,7 +42,7 @@
  form {
    margin: 20px 0;
  }
- #error {
+ .error {
    color: #721c24;
    background: #f8d7da;
    padding: 8px 10px;
@@ -49,7 +50,6 @@
    border-radius: 5px;
    margin-bottom: 10px;
    border: 1px solid #f5c6cb;
-   display:none;
    display: none;
  }
  .field {
@@ -101,63 +101,50 @@
      <div class="wrapper">
        <section class="signup">
        <div class="simcash">  <header><span class="first">SIM</span><span class="second">CASH</span></header></div>
-         <form action="signup.php" method="POST">
-           <div id="error">There is an error </div>
+         <form action="login3.php" method="POST">
+           <div class="error" id="err">Enter Email and password</div>
            <div class="details">
-             <div class="field">
-             <label>First name</label>
-             <input type="text" placeholder="first name" name="firstname" id="pass1" required >
-             </div>
-             
-             <div class="field">
-             <label>Last name</label>
-             <input type="text" placeholder="Last name" name="lastname" id="pass2" required>
-              </div>
          
              <div class="field">
              <label>Email address</label>
-             <input type="email" placeholder="Enter email " name="email" id="pass3" required>
+             <input type="email" placeholder="Enter email " name="email" id="mail">
              </div>
              
              <div class="field">
              <label>Password</label>
-             <input type="password" placeholder="Enter new password " name="password" id="pass4" required>
+             <input type="password" placeholder="Enter new password " name="password" id="pass">
+             <i class="fas fa-eye"></i>
              </div>
-
+             <a href="index.html">&#2493;</a>
+            
               <div class="field">
-            <input type="submit" value="sign up"id="button" onclick="submitMe();">
+            <input type="submit" value="sign up"id="button"  onclick="showDe()">
              </div>
            </div>
-
      </form>
-     <div class="link">Already signed up?<a href="login1.html">login</a></div>
+     <div class="link">Don't have an account?<a href="signup.html">signup</a></div>
        </section>
      </div>
-     <script type="text/javascript">
-     function submitMe() {
-     var all =document.getElementById("pass4").value;
-     if(all=="") {
+     <script>
+       function showDe() {
+         var email = document.getElementById("mail").value;
+         var pass = document.getElementById("pass").value;
+         
+      if( pass=="")   {
        document.getElementById("error").style.display="block";
        document.getElementById("error").innerHTML="Enter your password ";
      }
      else {
        document.getElementById("error").style.display="none";
      }
-     }
-     var email =document.getElementByid("pass3").value;
-     
+    
 if(email=="") {
        document.getElementById("error").style.display="block";
        document.getElementById("error").innerHTML="Enter your email";
-     }
-     
+      
+         }
+         }
      </script>
-     <div class="field">
-     
-
-</div>
-     
-     
    </body>
    
    
